@@ -1,0 +1,65 @@
+import java.util.Scanner;
+@SuppressWarnings("unused")
+public class Main {
+
+	@SuppressWarnings("resource")
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+		System.out.println("what is the operation?");
+		var operation = scanner.nextLine();
+		var validoperation = false;
+		String numone = "";
+		String numtwo = "";
+		switch(operation) {
+		case "+":
+			System.out.println("Insert First Number");
+			numone = scanner.nextLine();
+			System.out.println("Insert Second Number");
+			numtwo = scanner.nextLine();
+			break;
+		case "-":
+			System.out.println("Insert First Number");
+			numone = scanner.nextLine();
+			System.out.println("Insert Second Number");
+			numtwo = scanner.nextLine();
+			break;
+		case "*":
+			System.out.println("Insert First Number");
+			numone = scanner.nextLine();
+			System.out.println("Insert Second Number");
+			numtwo = scanner.nextLine();
+			break;
+		case "/":
+			System.out.println("Insert First Number");
+			numone = scanner.nextLine();
+			System.out.println("Insert Second Number");
+			numtwo = scanner.nextLine();
+			break;
+		default:
+			System.out.println("Your operation was invalid");
+			break;
+		}
+		
+
+		int result = 0;
+		switch(operation) {
+		case "+":
+			result = (Integer.parseInt(numone) + Integer.parseInt(numtwo));
+			System.out.println(Integer.parseInt(numone) + " + " + Integer.parseInt(numtwo) + " = " + result);
+			break;
+		case "-":
+			result = (Integer.parseInt(numone) - Integer.parseInt(numtwo));
+			System.out.println(Integer.parseInt(numone) + " - " + Integer.parseInt(numtwo) + " = " + result);
+			break;
+		case "*":
+			result = (Integer.parseInt(numone) * Integer.parseInt(numtwo));
+			System.out.println(Integer.parseInt(numone) + " * " + Integer.parseInt(numtwo) + " = " + result);
+			break;
+		case "/":
+			result = (Integer.parseInt(numone) / Integer.parseInt(numtwo));
+			System.out.println(Integer.parseInt(numone) + " / " + Integer.parseInt(numtwo) + " = " + result);
+			break;
+		}
+	}
+
+}
